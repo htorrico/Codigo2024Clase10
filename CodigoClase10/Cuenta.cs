@@ -12,13 +12,26 @@ namespace CodigoClase10
 
         public double Saldo { get; set; }
 
+        //Firma
         public virtual void MostrarInformacion()
         {
+            //Implementación (Lógica Negocio)
             Console.WriteLine(NumeroCuenta);
             Console.WriteLine(Saldo);
-
         }
+
+
+        //Firma
         public abstract void Depositar(double monto);
-                
+
+        ////Firma
+        //public abstract void Retirar(double monto);
+
+        ////Firma
+        //public abstract void CambiarPassword(string newPassword);
+
     }
+
+
+   
 }
